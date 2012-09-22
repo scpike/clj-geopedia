@@ -2,7 +2,7 @@
   (:require [clj-http.client :as client])
   (:require [clojure.data.json :as json]))
 
-(def max-distance 1)
+(def max-distance 100)
 
 (defn get-url [term]
   (let [api-source "http://api.geonames.org/wikipediaSearchJSON?maxRows=10&username=demo&"]
@@ -50,4 +50,4 @@
 
 (defn search [origin term]
   (let [ json-response (get-json term) ]
-    (print-place (best-match origin json-response max-distance))))
+    (best-match origin json-response max-distance)))
