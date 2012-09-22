@@ -7,4 +7,5 @@
                  [clj-http "0.5.3"]
                  [org.clojure/data.json "0.1.3"]
                  [org.clojure/math.numeric-tower "0.0.1"]
-                 [noir "1.2.2"]])
+                 [noir "1.2.2"]
+                 [hiccup "1.0.1"]])
